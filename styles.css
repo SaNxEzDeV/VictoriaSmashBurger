@@ -11,6 +11,21 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+h1 {
+    font-size: 50px; 
+    margin: 0;
+    display: flex; /* Changed from inline-flex to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.image-as-heading {
+    width: 100%; /* Make the image responsive */
+    /* max-width: 300px; Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
 /* Set a full background image for the body */
 body {
     display: flex;
@@ -103,7 +118,7 @@ footer {
     background-color: #333; /* Dark background for footer */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     position: relative;
     bottom: 0;
     width: 100%;
