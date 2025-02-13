@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a full background image for the body */
+body {
+    display: flex;
+    flex-direction: column; /* Stack children (header, main, footer) vertically */
+    background-image: url('/Users/rafaelsanchez/Downloads/vic_background_final.jpg');
+    background-size: cover; /* Resizes the image to cover the entire body */
+    background-position: center center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 100vh; /* Makes sure the body fills the screen height */
+    margin: 0; /* Removes default margin */
+}
+
+/* Optionally, you can add a fixed background for a parallax effect */
+body {
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+
+/* Header Styling */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Resize the images inside the header */
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle-btn {
+    border: none; /* Remove button borders */
+    background-color: transparent; /* Make button background transparent */
+    padding: 0; /* Remove padding */
+    display: inline-flex; /* Make the button inline-flex so the image stays aligned */
+    justify-content: center; /* Center image inside button */
+    align-items: center; /* Vertically center image */
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.3s; /* Add transition effect when hovered */
+}
+
+/* Optional: Add a hover effect to buttons */
+.circle-btn:hover {
+    transform: scale(1.5); /* Slightly scale up the button when hovered */
+}
+
+/* Make the image inside the button responsive */
+.icon-img {
+    width: 10vw; /* Set the image width to 10% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 50px; /* Maximum width */
+    max-height: 50px; /* Maximum height */
+}
+
+/* Main Content Section */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#menu-content {
+    width: 100%;
+    max-width: 800px;
+}
+
+#menu-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .language-selector {
+        flex-direction: column;
+    }
+
+    .language-selector img {
+        width: 40px; /* Reduce size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+     /*header img {
+         width: 80%;  /*Make the logo smaller on mobile 
+     }*/ 
+
+    footer p {
+        font-size: 12px;
+    }
+}
