@@ -15,7 +15,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column; /* Stack children (header, main, footer) vertically */
-    background-image: url('/Users/rafaelsanchez/Downloads/vic_background_final.jpg');
+    background-image: url('https://drive.google.com/thumbnail?id=1dd4gJDc1sAC6CuyhEhYiUkMMfkImV3XC&sz=800');
     background-size: cover; /* Resizes the image to cover the entire body */
     background-position: center center; /* Ensures the image is centered */
     background-repeat: no-repeat; /* Prevents repeating the image */
