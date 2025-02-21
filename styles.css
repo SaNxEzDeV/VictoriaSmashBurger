@@ -19,6 +19,14 @@ h1 {
     align-items: center; /* Center vertically */
 }
 
+.timetable-text {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .image-as-heading {
     width: 100%; /* Make the image responsive */
     /* max-width: 300px; Set a maximum width */
